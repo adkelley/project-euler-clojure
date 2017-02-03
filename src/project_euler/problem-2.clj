@@ -4,7 +4,9 @@
 ;; https://projecteuler.net/problem=2
 (def fib-seq-iterate
   (map first (iterate
-                (fn [[a b]] [(bigint b) (bigint (+ a b))]) [0 1])))
+                (fn [[a b]]
+                  [(bigint b) (bigint (+ a b))])
+                [1 2])))
 
 (defn problem-2 [max-num]
   (reduce + (filter even?

@@ -10,7 +10,7 @@
   "I'm solving the Euler problems - woo hoo!"
   [& args]
   (println "Project Euler")
-  (println (str "Problem 1: " (vec problem-1)))
+  (println (str "Problem 1: " (problem-1 1000)))
   (println (str "Problem 2: " (problem-2 4000000)))
   (println (str "Problem 3: " (problem-3)))
-  (println (str "Problem 4: " (problem-4))))
+  (println (str "Problem 4: " (problem-4 100))))
