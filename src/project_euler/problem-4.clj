@@ -1,6 +1,6 @@
 (in-ns 'project-euler.core)
 
-;; Largest palindrome product"{p;o.lm  \\-09wa   ip]09dwqa  }
+;; Largest palindrome product"
 ;; https://projecteuler.net/problem=4
 (defn- palindrome? [number]
   (= (str number) (clojure.string/reverse (str number))))

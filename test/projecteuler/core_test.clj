@@ -21,3 +21,8 @@
   (testing
     "4: The largest palindrome of the product of two 2-digits numbers should be 9009 -> "
     (is (= (problem-4 10) 9009))))
+
+(deftest p5-test
+  (testing
+    "5: The smallest multiple of numbers from 1 to 10 should be 2520"
+    (is (= (problem-5 10) 2520))))
