@@ -2,6 +2,7 @@
 
 ;; Largest palindrome product"
 ;; https://projecteuler.net/problem=4
+
 (defn- palindrome? [number]
   (= (str number) (clojure.string/reverse (str number))))
 
