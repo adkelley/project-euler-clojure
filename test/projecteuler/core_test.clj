@@ -12,6 +12,11 @@
     "2: The sum of the even-valued fibonacci terms < 89 should equal 44 -> "
     (is (= (problem-2 89) 44))))
 
+(deftest p3-test
+  (testing
+    "3: The largest prime factor of 13195 should equal 29 -> "
+    (is (= (problem-3 13195) 29))))
+
 (deftest p4-test
   (testing
     "4: The largest palindrome of the product of two 2-digits numbers should be 9009 -> "
