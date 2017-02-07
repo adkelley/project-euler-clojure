@@ -2,6 +2,11 @@
   (:require [clojure.test :refer :all]
             [project-euler.core :refer :all]))
 
+(deftest p7-test
+  (testing
+    "7: The sixth prime number is 13"
+    (is (= (problem-7 6) 13))))
+
 (deftest p6-test
   (testing
     "6: The Sum square difference of the first 10 natural numbers should be 2640"

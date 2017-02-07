@@ -7,11 +7,13 @@
 (load "problem-4")
 (load "problem-5")
 (load "problem-6")
+(load "problem-7")
 
 (defn -main
   "I'm solving the Euler problems - woo hoo!"
   [& args]
   (println "Project Euler")
+  (println (str "Problem 7: " (problem-7 10001)))
   (println (str "Problem 6: " (problem-6 100)))
   (println (str "Problem 5: " (problem-5 20)))
   (println (str "Problem 4: " (problem-4 100)))
