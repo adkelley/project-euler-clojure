@@ -4,20 +4,20 @@
   nth)
 
 (defn prime?
-  ([num] (prime? 2 num))
-  ([i num]
+  ([num] (prime? num 2))
+  ([num i]
    (cond
      (= i 6) true
      (= (rem num i) 0) false
-     :else (recur (inc i) num))))
+     :else (recur num (inc i)))))
 
 (defn nth-prime-factor
-  ([nth] (nth-prime-factor 4 8 7 nth))
-  ([n z prime nth]
+  ([nth] (nth-prime-factor nth 4 8 7))
+  ([nth n z prime]
    (cond
      (= n nth) prime
-     (prime? z) (recur (inc n) (inc z) z nth)
-     :else (recur n (inc z) prime nth))))
+     (prime? z) (recur nth (inc n) (inc z) z)
+     :else (recur nth n (inc z) prime))))
 
 (defn problem-7 [nth]
   (cond

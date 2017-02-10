@@ -2,6 +2,12 @@
   (:require [clojure.test :refer :all]
             [project-euler.core :refer :all]))
 
+(deftest p8-test
+  (let [digits "73167176531330624919225119679989574742355349194934969835203127745063262395783"]
+    (testing
+      "8: The four adjacent digits that have the greatest product are 9 × 9 × 8 × 9 = 5832"
+      (is (= (problem-8 digits 4) ["9989", 5832])))))
+
 (deftest p7-test
   (testing
     "7: The sixth prime number is 13"

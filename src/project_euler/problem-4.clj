@@ -12,4 +12,4 @@
           n-digit-number2 (range digits (* 10 digits))
           :let [product (* n-digit-number1 n-digit-number2)]
           :when (palindrome? product)]
-       product)))
+      product)))
