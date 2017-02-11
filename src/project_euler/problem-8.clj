@@ -4,7 +4,7 @@
   (map #(- (int %) 48) (seq digits)))
 
 (defn- largest-product
-  ([digits adjacent] (largest-product digits adjacent "" 1 (count digits)))
+  ([digits adjacent] (largest-product digits adjacent "" 0 (count digits)))
   ([digits adjacent ds max-product digit-count]
    (if (> digit-count adjacent)
      (let [n-digits (take adjacent digits)

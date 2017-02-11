@@ -1,4 +1,4 @@
-# My solutions to the Project Euler problems in Clojure
+# My solutions to the Project Euler problems written in Clojure
 
 **See** [Project Euler](https://projecteuler.net/about) for background
 

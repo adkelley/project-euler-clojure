@@ -11,7 +11,9 @@
 (load "problem-8")
 
 (def digit-string
-  (slurp "./resources/pe8.txt"))
+   (try
+     (clojure.string/replace (slurp "./resources/pe8.txt") "\n" "")
+     (catch Exception e ("0"))))
 
 (defn -main
   "I'm solving the Euler problems - woo hoo!"
